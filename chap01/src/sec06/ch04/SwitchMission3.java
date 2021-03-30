@@ -13,9 +13,7 @@ public class SwitchMission3 {
 		case 9: case 10: case 11: System.out.println("여름"); break;
 		default : System.out.println("겨울"); break;
 		}
-		while(true) {
-			System.out.println(Math.random());
-		}
+		
 		
 		
 	}
