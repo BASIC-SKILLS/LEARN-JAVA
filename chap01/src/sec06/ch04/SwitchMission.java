@@ -13,7 +13,9 @@ public class SwitchMission {
 		case 9: System.out.println("회의를 합니다."); break;
 		case 10: System.out.println("업무를 봅니다."); break;
 		default: System.out.println("외근을 합니다."); break;
+		
 		}
+		System.out.println("무야호");
 		
 	}
 
