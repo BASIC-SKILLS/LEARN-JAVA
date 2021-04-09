@@ -46,3 +46,18 @@ class CalcInstance2 {
 		return this.num1 + num2;  
 	}
 }
+
+
+
+/*
+
+class CalcStatic3 {
+	static int num1;          //전역 변수 + //클래스 변수 (static은 클래스명을 붙여서 사용하기 때문에 클래스 변수라고 부른다)  
+	static int num2;          
+	int sum() {               
+		return num1 + num2;
+	}
+}
+
+
+*/

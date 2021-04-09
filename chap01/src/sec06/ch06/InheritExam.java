@@ -29,24 +29,27 @@ class Animal { //부모는 절대 자식의 존재를 모른다.  //자식은 �
 		super();
 	}
 	
+	/*
 	public Animal(String name, int age) {
 		super();
 		
 		this.name = name;
 		this.age = age;
 	}
+	*/
 
 	void cry() {
 		System.out.println("운다\n\n");
 	}
+
 }
 
-class Cat extends Animal { // extends - 상속 //자식은 부모보다 커질 수는 있지만 부모보다 줄어들 수는 없다
+class Cat extends Animal { // extends - 상속 //자식은 부모보다 커질 수는 있지만 부모보다 줄어들 수는 없다 // 자바는 다중 상속이 안된다. 
 	//생성자가 없을 시에는 컴파일러가 자동으로 생성자와 super()를 넣어준다. 아래의 내용 그대로 넣어준다. 다만 생성자가 없을 시에만
 	//셍성자에서는 절대 super()보다 먼저 소스가 생길 수 없다. 
 
 	 Cat() {
-		super(" ", 0); //직속부모의 생성자. //부모클래스에 생성자가 없기 때문에 자식클래스에서 직속부모클래스의 생성자를 호출할 때, 매개변수에 맞게 해줘야 한다. 
+		//super(" ", 0); //직속부모의 생성자. //부모클래스에 생성자가 없기 때문에 자식클래스에서 직속부모클래스의 생성자를 호출할 때, 매개변수에 맞게 해줘야 한다. 
 	} 
 	 
 	
@@ -57,7 +60,7 @@ class Cat extends Animal { // extends - 상속 //자식은 부모보다 커질 �
 	
 	@Override //부모클래스의 메소드의 내용이 마음에 안들어서 내가 수정할 때, 부모꺼를 쓰는데 내 방식을 덮어서 쓰겠다. 
 	void cry() {
-		System.out.println("야옹\n\n");
+		System.out.println("야옹");
 	}
 
 }
