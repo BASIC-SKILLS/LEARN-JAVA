@@ -17,6 +17,7 @@ public class CardDeck {
 		int cardCount = 0;
 		for (String patternP : pattern ) {
 			for (String symboleP : symbole) {
+				//생성자는(오버로딩은) 객체 생성하는 그 순간에 값을 넣고 싶다면(지정하고 싶다면) 쓴다! CardDeck.java
 				Card card = new Card(patternP, symboleP);
 				CARDDECK[cardCount++] = card;
 			}
@@ -48,6 +49,36 @@ public class CardDeck {
 		for (int i=0; i<CARDDECK.length; i++) {
 			Card card = new Card(pattern[i%pattern.length],symbole[i%symbole.length]);
 			CARDDECK[i] = card;
+		}
+	}
+	
+	private int getRandomIdx() {
+		return (int) (Math.random() * CARDDECK.length);
+	}
+	
+	private Card getRandomCard(int idx) {
+		Card c = CARDDECK[idx];
+		CARDDECK[idx] = null;
+		return c;
+	}
+	
+	public Card getOneCard() {
+		int idx = 0;
+		
+		while(true) {
+			idx = getRandomIdx();
+			if (CARDDECK[idx] != null) {
+				getRandomCard(idx);
+			} else {
+				idx = getRandomIdx();
+				getRandomCard(idx);
+			}
+		}
+	}
+	
+	public void printAll() {
+		for (Card c : CARDDECK) {
+			System.out.println(c);
 		}
 	}
 }
