@@ -4,9 +4,9 @@ public class Card {
 	private String pattern;
 	private String symbol;
 	
-	Card() { super(); }
+	public Card() { super(); }
 	
-	Card(String pattern, String symbol) {
+	public Card(String pattern, String symbol) {
 		super();
 		this.pattern = pattern;
 		this.symbol = symbol;

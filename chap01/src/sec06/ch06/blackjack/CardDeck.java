@@ -68,11 +68,8 @@ public class CardDeck {
 		while(true) {
 			idx = getRandomIdx();
 			if (CARDDECK[idx] != null) {
-				getRandomCard(idx);
-			} else {
-				idx = getRandomIdx();
-				getRandomCard(idx);
-			}
+				return getRandomCard(idx);
+			} 
 		}
 	}
 	
