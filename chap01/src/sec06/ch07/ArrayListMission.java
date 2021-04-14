@@ -15,6 +15,25 @@ public class ArrayListMission {
 		for (int i=0; i<list.size(); i++) {
 			System.out.println(list.get(i));
 		}
+		
+		System.out.println();
+		
+		int removeVal = list.remove();
+		System.out.println(removeVal);
+		
+		System.out.println();
+		
+		list.add(2, 30);
+		
+		for (int i=0; i<list.size(); i++) {
+			System.out.println(list.get(i));
+		}
+		
+		System.out.println();
+		
+		int delVal = list.remove(1);
+		System.out.println(delVal);
+		
 	}
 
 }
