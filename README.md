@@ -7,3 +7,17 @@ https://github.com/bitcocom/JavaTPC.git
 
 자바의 정석 남궁성
 https://github.com/castello/javajungsuk_basic.git
+
+
+
+
+* 그림은 따라 그려야 한다.
+
+자바의 정석 객체지향 개념
+https://youtube.com/playlist?list=PLW2UjW795-f5JPTsYHGAawAck9cQRw5TD
+
+자바의 정석 객체지향 개념 강의 중 레전드 ( 진리를 깨달음 )
+- 클래스변수 인스턴스변수
+- https://youtu.be/frKHrnsCoS4
+
+- 
