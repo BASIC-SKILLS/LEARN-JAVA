@@ -11,7 +11,7 @@ https://github.com/castello/javajungsuk_basic.git
 
 
 <br><br>
-* 그림은 따라 그려야 한다.
+!! 그림은 따라 그려야 한다.
 
 자바의 정석 객체지향 개념
 https://youtube.com/playlist?list=PLW2UjW795-f5JPTsYHGAawAck9cQRw5TD
